@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&display=swap&subset=cyrillic-ext"
+  rel="stylesheet"/>
+  <link rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous"/>
+
   <title>St.Petersburg</title>
 </head>
 <body>
@@ -71,27 +79,27 @@
         </div>
       </div>
 
-      <div class="about">
+      <div class="card">
 
-        <div class="about__item">
-          <div class="about__img">
+        <div class="card__item">
+          <div class="card__img">
             <img src="assets/images/about/petr.jpg" alt="">
           </div>
-          <div class="about__text">about Petr</div>
+          <div class="card__text">about Petr</div>
         </div>
 
-        <div class="about__item">
-          <div class="about__img">
+        <div class="card__item">
+          <div class="card__img">
             <img src="assets/images/about/old spb.jpg" alt="">
           </div>
-          <div class="about__text">history</div>
+          <div class="card__text">history</div>
         </div>
 
-        <div class="about__item">
-          <div class="about__img">
+        <div class="card__item">
+          <div class="card__img">
             <img src="assets/images/about/now.jpg" alt="">
           </div>
-          <div class="about__text">Spb now</div>
+          <div class="card__text">Spb now</div>
         </div>
 
       </div>
@@ -297,15 +305,91 @@
   </div>
 
 
+<section class="section">
+  <div class="container">
+
+    <div class="section__header">
+      <h3 class="section__suptitle">Who we are</h3>
+      <h2 class="section__title">Meet our team</h2>
+      <div class="section__text">
+        <p>The most interesting from the moment of St.Petersburg foundation to the present day</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__item">
+        <div class="card__img">
+          <img src="assets/images/about/petr.jpg" alt="">
+        </div>
+        <div class="card__text">about Petr</div>
+      </div>
+
+      <div class="card__item">
+        <div class="card__img">
+          <img src="assets/images/about/old spb.jpg" alt="">
+        </div>
+        <div class="card__text">history</div>
+      </div>
+
+      <div class="card__item">
+        <div class="card__img">
+          <img src="assets/images/about/now.jpg" alt="">
+        </div>
+        <div class="card__text">Spb now</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section--map ">
+  <div class="container">
+    <div class="map">
+      <h2 class="map__title">
+        <div><i class="fas fa-map-marker-alt"></i></div>
+        <!-- target="_blank чтоб ссылка открывалась в новом окне -->
+        <a href="https://goo.gl/maps/ahMFxTiU7xEKVCUu5" target="_blank">Open Map</a>
+      </h2>
+    </div>
+  </div>
+</section>
 
 
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer__inner">
+      <div class="footer__col">
+        <div class="footer__logo">St.Petersburg</div>
+        <div class="footer__text">бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла</div>
+
+        <div class="footer__social">
+          <div class="footer__social-header">
+            <b>17.8k</b> followers
+          </div>
+          <div class="footer__social-content">
+            Follow Us:
+            <!-- target="_blank чтоб ссылка открывалась в новом окне -->
+            <a href="#" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="subscribe" action="/" method="post">
+
+        </form>
 
 
+      </div>
+      
+    </div><!-- /.footer__inner -->
 
-
-
-
-
+  </div><!-- /.container -->
+</footer>
 
 </body>
 </html>
