@@ -751,6 +751,18 @@ border-left  : 2px solid #ccc;
   text-transform: uppercase;
 }
 
+/* Icons */
+.icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: black;
+}
+
+.icon:hover {
+  fill: red;
+}
+
 /* Blogs */
 .blogs__item {
   display: flex;
