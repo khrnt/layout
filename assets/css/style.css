@@ -27,7 +27,12 @@ hr {
   background-color: #e5e5e5;
 }
 
-/* container */
+/* Page */
+.page {
+  overflow: hidden;
+}
+
+/* Container */
 .container {
   width: 100%;
   max-width: 1230px;
@@ -35,7 +40,7 @@ hr {
   margin: 0 auto;
 }
 
-/* intro */
+/* Intro */
 .intro {
   display: flex;
   flex-direction: column;
@@ -245,6 +250,7 @@ hr {
 /* тут отступ от интро до what we do */
 .section {
   padding: 80px 0;
+  overflow: hidden;
 }
 
 .section--devices {
@@ -471,6 +477,7 @@ hr {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .devices__item {
@@ -590,6 +597,10 @@ hr {
 }
 
 .reviews__photo {
+  display: block;
+  width: 210px;
+  height: 210px;
+
   border:  2px solid #95e1d3;
 
   position: absolute;
@@ -635,13 +646,13 @@ hr {
 }
 
 .reviews__btn::after {
-content: "";
-display: block;
-width: 16px;
-height: 16px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
 
-border-top: 2px solid #ccc;
-border-left  : 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  border-left  : 2px solid #ccc;
 }
 
 .reviews__btn--prev {
@@ -698,6 +709,18 @@ border-left  : 2px solid #ccc;
   background-color: #f8f8f8;
 }
 
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+  padding-bottom: 65px;
+}
+
+.footer__col {
+  padding: 0 15px;
+}
+
 .footer__col--first {
   width: 40%;
 }
@@ -708,12 +731,6 @@ border-left  : 2px solid #ccc;
 
 .footer__col--third {
   width: 22%;
-}
-
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 65px;
 }
 
 .footer__logo {
@@ -830,13 +847,15 @@ border-left  : 2px solid #ccc;
 }
 
 .instagram__item {
-  width: 32.33333%;
+  width: 33%;
   flex: 1 1 0;
   border-bottom: 1px solid #fff;
 }
 
 .instagram__item img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Subscribe */
@@ -912,10 +931,10 @@ border-left  : 2px solid #ccc;
 }
 
 .copyright span {
-   color: #f38181;
+  color: #f38181;
 }
 
-
+/* ADAPTATION */
 
 @media (max-width: 1230px) {
 
@@ -927,6 +946,12 @@ border-left  : 2px solid #ccc;
   .intro__title {
     font-size: 120px;
   }
+
+  /* Reviews */
+  .reviews__text {
+    font-size: 20px;
+  }
+
 
 }
 
@@ -968,6 +993,39 @@ border-left  : 2px solid #ccc;
     border-bottom: 0;
   }
 
+  /* Reviews */
+  .reviews {
+    padding: 0 60px;
+  }
+
+  .reviews__photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .reviews__item {
+    padding-left: 175px;
+  }
+
+  /* Footer */
+  .footer__col--first {
+    width: 100%;
+  }
+
+  .footer__col--second,
+  .footer__col--third {
+    width: 50%;
+  }
+
+  /* Instagram */
+  .instagram {
+    justify-content: flex-start;
+  }
+
+  .instagram__item {
+    width: auto;
+    border-right: 1px solid white;
+  }
 }
 
 /* планшет */
@@ -1037,6 +1095,30 @@ border-left  : 2px solid #ccc;
     width: 100%;
   }
 
+  /* Reviews */
+  .reviews__photo {
+    position: static;
+    margin: 0 auto 20px;
+  }
+
+  .reviews__item {
+    padding-left: 0;
+  }
+
+  .reviews__text {
+    font-size: 16px;
+  }
+
+  .reviews__author {
+    font-size: 20px;
+  }
+
+  /* Footer */
+  .footer__col--second,
+  .footer__col--third {
+    width: 100%;
+  }
+
 }
 
 /* мобильная версия */
@@ -1095,6 +1177,40 @@ border-left  : 2px solid #ccc;
     right: -80px;
   }
 
+  /* Reviews */
+  .reviews {
+    padding: 0;
+  }
+
+  .reviews__btn {
+    top: 18%;
+  }
+
+  /* Blogs */
+  .blogs__img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .blogs__title {
+    font-size: 10px;
+  }
+
+  /* Subscribe */
+  .subscribe {
+    flex-wrap: wrap;
+    max-width: none;
+  }
+
+  .subscrie__input {
+    margin-bottom: 10px;
+    border-right: 1px solid #e7e7e7;
+  }
+
+  .subscrie__input,
+  .subscrie__btn {
+    width: 100%;
+  }
 }
 
 
